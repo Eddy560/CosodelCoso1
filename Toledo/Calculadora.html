@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div>
+        <center><h1 id="titulopiola">Calculadora</h1></center>
+        <center><h3><p>Calculadora de operaciones básicas</p></h3></center>
+        <h3><marquee>Hola mundo de JS en HTML</marquee></h3>
+    </div>
+    <hr>
+    <div class="fondo1">
+        <center><label id="lblNumUno" for="numUno">Num 1</label>
+        <input type="text" id="numUno" class="fondito1"/> 
+        <button class="fondito3" onclick="suma()"> +</button>
+        <button class="fondito3" onclick="resta()"> -</button>
+        <button class="fondito3" onclick="potencia()"> ^</button></center>
+    <center><label id="lblNumDos" for="numDos">Num 2</label>
+        <input type="text" id="numDos" class="fondito2"/>
+        <button class="fondito3" onclick="multiplicacion()"> x</button>
+        <button class="fondito3" onclick="division()"> ÷</button></center>
+    </div>
+    <div class="resultadoenzoenzo">
+        <center><p id="resultado">El Resultado es: </p></center>
+    </div>
+    <div class="fondo1">
+        <label id="labeltipo" for="tipo">De que tipo es el vehículo:</label>
+                <input type="text" id="tipo" class="fondito1" />
+                <button class="boton" onclick="licencia(tipo)">Verificar</button>
+        </div>
+        <div>
+            <center><h2><p class="fondito1" id="resultado1">El Resultado es: </p></h2></center>
+        </div>
+        <hr>
+        <div class="fondo1">
+            <label id="labelopcion1" for="opcion1">Introduzca el nombre de un vehiculo:</label>
+                <input type="text" id="opcion1" class="fondito1"/>
+            <label id="labelopcion2" for="opcion2">Introduzca el nombre de otro ehiculo:</label>
+                <input type="text" id="opcion2" class="fondito1"/>
+                <button class="boton" onclick="mejor(opcion1,opcion2)">Verificar</button> 
+        </div>
+        <div>
+            <center><h2><p class="fondito1" id="resultado2">El Resultado es: </p></h2></center>
+        </div>
+        <hr>
+        <div class="fondo1">
+            <label id="labelantiguedad" for="antiugedad">Ingresa la antiguedad:</label>
+                <input type="text" id="antiguedad" class="fondito1"/>
+            <label id="labelprecio" for="precio">Ingresa el precio:</label>
+                <input type="text" id="precio" class="fondito1"/>
+            <button class="boton" onclick="precio(antiguedad,precio)">Verificar</button>
+        </div>
+        <div>
+            <center><h2><p class="fondito1" id="resultado3">El Resultado es: </p></h2></center>
+        </div>
+    <script src="scripts/examen.js"></script>
+    <script src="scripts/doomsday.js"></script>
+</body>
+</html>
